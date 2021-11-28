@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+body {
+	padding: 0px;
+	margin: 30px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-sarif;
+}
+
+/* ---------------------------- */
+
+.main {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.sign-up {
+	grid-column-start: 1;
+}
+
+.right-side {
+	grid-column-start: 2;
+	background: #000842;
+	border-radius: 15px;
+	color: #ffffff;
+}
+
+.sign-up__logo-text {
+	font-weight: 600;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.sign-up__form {
+	margin-left: 123px;
+}
+
+.sign-up__form__register-text__header {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 45px;
+	line-height: 100%;
+	text-align: left;
+	vertical-align: top;
+}
+
+.sign-up__form__register-text__b-text__text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	line-height: 100%;
+	text-align: left;
+	vertical-align: top;
+	margin-bottom: 50px;
+}
+
+.sign-up__form__register-text__b-text__text_login {
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.sign-up__form__block__text_e, .sign-up__form__block__text_u, .sign-up__form__block__text_p, .sign-up__form__block__text_c {
+	font-weight: 500;
+	font-style: normal;
+	font-size: 13px;
+	line-height: 20px;
+	text-align: left;
+	color: #999999;
+}
+
+.sign-up__form__block__email, .sign-up__form__block__username, .sign-up__form__block__password, .sign-up__form__block__confirm {
+	padding: 12px 25px;
+	margin-bottom: 30px;
+	font-weight: 400;
+	width: 25vw;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000842;
+	border-width: 0px 0px 3px 0px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+.sign-up__form__block__email {
+	background: url('./img/email.svg') no-repeat;
+	background-position: 0% 50%;
+}
+
+.sign-up__form__block__username {
+	background: url('./img/user.svg') no-repeat;
+	background-position: 0% 50%;
+}
+
+.sign-up__form__block__password {
+	background: url('./img/lock.svg') no-repeat, url('./img/eye.svg') no-repeat;
+	background-position: 0% 50%, 95% 50%;
+}
+
+.sign-up__form__block__confirm {
+	background: url('./img/lock.svg') no-repeat, url('./img/eye.svg') no-repeat;
+	background-position: 0% 50%, 95% 50%;
+}
+
+.sign-up__form__block__register, .sign-up__form__block__login {
+	font-style: normal;
+	font-size: 17px;
+	line-height: 26px;
+	text-align: center;
+	font-weight: 500;
+	color: #ffffff;
+	width: 28vw;
+	padding: 12px 25px;
+	border-radius: 32px;
+	background: #0C21C1;
+	box-shadow: 0px 4px 26px 0px #000040;
+}
+
+.right-side__phone {
+	text-align: right;
+	margin: 25px;
+}
+
+.right-side__b-image__image {
+	width: 420px;
+	height: 420px;
+	margin-left: 170px;
+}
+
+.right-side__b-image__b-text__text {
+	margin-left: 98px;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: left;
+}
+
+.right-side__b-image__b-text__text_bold {
+	font-weight: 600;
+	font-style: normal;
+	font-size: 40px;
+	line-height: 60px;
+	text-align: left;
+}
+
+/* ----------------------------------- */
+
+.sign-up__form__block__checkbox {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sign-up__form__block__mini-text {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 18px;
+	margin-left: 35%;
+}
+
+#login {
+	margin-top: 30px;
+}
+
+#login-text {
+	display: none;
+}
+
+.footer__text {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #B5B5B5;
+	margin-left: 274px;
+	margin-top: 25px;
+}
+
+.footer__icon_first {
+	margin-left: 256px;
+}
+
+.footer__icon, .footer__icon_first {
+	margin-right: 15px;
+}
+
+@media(max-width: 576px) {
+	.right-side {
+		display: none;
+	}
+
+	body {
+		margin-left: 20px;
+		margin-right: 15px;
+	}
+
+	.main {
+		display: block;
+	}
+
+	.sign-up__form {
+		margin: 0;
+	}
+
+	.sign-up__form__block__email, .sign-up__form__block__username, .sign-up__form__block__password, .sign-up__form__block__confirm, .sign-up__form__block__submit {
+		width: 90%;
+	}
+
+	#login {
+		margin-left: 18px;
+	}
+
+	.footer__text {
+		margin-left: 37%;
+	}
+
+	.sign-up__form__block__mini-text {
+		margin-left: 57%;
+	}
+
+	.footer__icon_first {
+		margin-left: 33%;
+	}
+}
