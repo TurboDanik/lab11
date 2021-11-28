@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration</title>
+
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="main">
+		<div class="sign-up">
+			<p class="sign-up__logo-text">Your logo</p>
+			<form class="sign-up__form">
+				<div class="sign-up__form__register-text">
+					<p class="sign-up__form__register-text__header">Sign in</p>
+					<div class="sign-up__form__register-text__b-text">
+						<p class="sign-up__form__register-text__b-text__text">If you don’t have an account register <br> 
+							You can   <a class="sign-up__form__register-text__b-text__text_login" href="registration.html">Register here !</a></p>
+						<p id="login-text">You are signed in</p>
+					</div>
+				</div>
+				<div class="sign-up__form__block">
+					<label class="sign-up__form__block__text_e">Email</label><br>
+					<input type="email" name="email" class="sign-up__form__block__email" placeholder="Enter your email address">
+				</div>
+				<div class="sign-up__form__block">
+					<label class="sign-up__form__block__text_p">Password</label><br>
+					<input type="password" name="password" class="sign-up__form__block__password" placeholder="Enter your Password">
+				</div>
+				<div class="sign-up__form__block">
+					<label class="sign-up__form__block__checkbox"><input type="checkbox" name="remember">Remember me</label>
+					<span class="sign-up__form__block__mini-text">Forgot Password?</span>
+				</div>
+				<div class="sign-up__form__block">
+					<input type="submit" name="login" class="sign-up__form__block__login" id="login" value="Login">
+				</div>
+			</form>
+
+			<div class="footer">
+				<p class="footer__text">or continue with</p>
+				<img src="./img/facebook.svg" class="footer__icon_first">
+				<img src="./img/apple.svg" class="footer__icon">
+				<img src="./img/google.svg" class="footer__icon">
+			</div>
+		</div>
+
+		<div class="right-side">
+			<div class="right-side__phone">
+				<img src="./img/phone.svg">
+				<span class="right-side__phone__number">+94 0116 789 754</span>
+			</div>
+			<div class="right-side__b-image">
+				<img src="https://s3-alpha-sig.figma.com/img/8c08/e116/254eca5f17b913c874afb12ee4949f89?Expires=1638748800&Signature=Qit3JMsx9RkXIpQu3DAHMI72LVZIwFG666CRWiarNFnMBPFRhy-ZIukCIyXGtX2yklvibWQxMZ8OK~HCmaFVeJdQSnNGs7gUCPMAlO9T~j5nbSxZ9tPBa1NGm7mPHiBureK93T2x3vDRTO4gHpzBfaIETrvcjjSXl23ZiSxQ-k~YBUrJcLBu2xZO9lXkpdd406j8wMPRTxwRrcNkUVf12B3YcPqITDbLB9BGXs5giWxGx7RU8g7soqFsAjzrwa-eRvF4sLklNzv1qcJ35t2oGbgAKGRRyB4Fm~7qvK9MtkqnmBLORnUgzUe395oSsRvlqKTNbfbqFBkxX-Pp~Zl4Hw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" class="right-side__b-image__image">
+				<div class="right-side__b-image__b-text">
+					<p class="right-side__b-image__b-text__text"><span class="right-side__b-image__b-text__text_bold">Sign In to name</span> <br> Lorem Ipsum is simply</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="script.js"></script>
+</body>
+</html>
