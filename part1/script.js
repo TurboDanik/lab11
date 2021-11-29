@@ -5,7 +5,7 @@ function checkUsername(username) {
 	var user = document.querySelector(".sign-up__form__block__text_u");
 
 	if (username.trim().length === 0) {
-		user.innerHTML("(Username should not be empty)");
+		user.innerHTML = "(Username should not be empty)";
 		user.style.color = "red";
 		user.style.fontStyle = "italic";
 		user.style.FontSize = "15px";
@@ -14,7 +14,7 @@ function checkUsername(username) {
 
 		return false;
 	} else {
-		user.innerHTML("Username");
+		user.innerHTML = "Username";
 		user.style.color = "green";
 		user.style.fontStyle = "normal";
 		user.style.FontSize = "13px";
@@ -28,7 +28,7 @@ function checkEmail(email) {
 	var mail = document.querySelector(".sign-up__form__block__text_e");
 
 	if (!email.trim().match(emailPattern)) {
-		mail.innerHTML("(Your email address must be in the format of name@domain.com)");
+		mail.innerHTML = "(Your email address must be in the format of name@domain.com)";
 		mail.style.color = "red";
 		mail.style.fontStyle = "italic";
 		mail.style.FontSize = "15px";
@@ -37,7 +37,7 @@ function checkEmail(email) {
 
 		return false;
 	} else {
-		mail.innerHTML("Email");
+		mail.innerHTML = "Email";
 		mail.style.color = "green";
 		mail.style.fontStyle = "normal";
 		mail.style.FontSize = "13px";
@@ -51,7 +51,7 @@ function checkPassword(password) {
 	var pass = document.querySelector(".sign-up__form__block__text_p");
 
 	if (!password.trim().match(passwordPattern)) {
-		pass.innerHTML("(Your password must contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character between 8 to 15 characters)");
+		pass.innerHTML = "(Your password must contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character between 8 to 15 characters)";
 		pass.style.color = "red";
 		pass.style.fontStyle = "italic";
 		pass.style.FontSize = "15px";
@@ -60,7 +60,7 @@ function checkPassword(password) {
 
 		return false;
 	} else {
-		pass.innerHTML("Password");
+		pass.innerHTML = "Password";
 		pass.style.color = "green";
 		pass.style.fontStyle = "normal";
 		pass.style.FontSize = "13px";
@@ -74,7 +74,7 @@ function checkConfirm(password, confirm) {
 	var conf = document.querySelector(".sign-up__form__block__text_c");
 
 	if (!confirm.match(password)) {
-		conf.innerHTML("(Your passwords should be same)");
+		conf.innerHTML = "(Your passwords should be same)";
 		conf.style.color = "red";
 		conf.style.fontStyle = "italic";
 		conf.style.FontSize = "15px";
@@ -83,7 +83,7 @@ function checkConfirm(password, confirm) {
 
 		return false;
 	} else {
-		conf.innerHTML("Password");
+		conf.innerHTML = "Password";
 		conf.style.color = "green";
 		conf.style.fontStyle = "normal";
 		conf.style.FontSize = "13px";
@@ -121,7 +121,7 @@ function compareEmail(email) {
 		var user = JSON.parse(localStorage.getItem(i));
 
 		if (user.email == email) {
-			mail.innerHTML("Email");
+			mail.innerHTML = "Email";
 			mail.style.color = "green";
 			mail.style.fontStyle = "normal";
 			mail.style.FontSize = "13px";
@@ -141,7 +141,7 @@ function comparePassword(password) {
 		var user = JSON.parse(localStorage.getItem(i));
 
 		if (user.password == password) {
-			pass.innerHTML("Password");
+			pass.innerHTML = "Password";
 			pass.style.color = "green";
 			pass.style.fontStyle = "normal";
 			pass.style.FontSize = "13px";
@@ -172,7 +172,7 @@ document.querySelector(".sign-up__form__block__login").addEventListener("click",
 			text.style.color = "green";
 
 		} else {
-			pass.innerHTML("(There is no such password)");
+			pass.innerHTML = "(There is no such password)";
 			pass.style.color = "red";
 			pass.style.fontStyle = "italic";
 			pass.style.FontSize = "15px";
@@ -180,7 +180,7 @@ document.querySelector(".sign-up__form__block__login").addEventListener("click",
 			document.querySelector(".sign-up__form__block__password").style.borderColor = "red";
 		}
 	} else {
-		mail.innerHTML("(There is no such email)");
+		mail.innerHTML = "(There is no such email)";
 		mail.style.color = "red";
 		mail.style.fontStyle = "italic";
 		mail.style.FontSize = "15px";
