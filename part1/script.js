@@ -93,13 +93,13 @@ function checkConfirm(password, confirm) {
 	return true;
 };
 
-document.querySelector(".sign-up__form__block__register").addEventListener("click", function(event) {
+document.querySelector(".sign-up__form__block__register").addEventListener('click', function(event) {
 	event.preventDefault();
 		
-	var username = document.querySelector(".sign-up__form__block__username").value;
-	var email = document.querySelector(".sign-up__form__block__email").value;
-	var password = document.querySelector(".sign-up__form__block__password").value;
-	var confirm = document.querySelector(".sign-up__form__block__confirm").value;
+	var username = document.querySelector(".sign-up__form__block__username").value.trim();
+	var email = document.querySelector(".sign-up__form__block__email").value.trim();
+	var password = document.querySelector(".sign-up__form__block__password").value.trim();
+	var confirm = document.querySelector(".sign-up__form__block__confirm").value.trim();
         
     if (checkUsername(username) && checkEmail(email) && checkPassword(password) && checkConfirm(password, confirm)) {
        	var formData = {
@@ -154,7 +154,7 @@ function comparePassword(password) {
 	return false;
 };
 
-document.querySelector(".sign-up__form__block__login").addEventListener("click", function(event) {
+document.querySelector(".sign-up__form__block__login").addEventListener('click', function(event) {
 	event.preventDefault();
 
 	var email = document.querySelector(".sign-up__form__block__email").value;
