@@ -93,7 +93,7 @@ function checkConfirm(password, confirm) {
 	return true;
 };
 
-document.getElementsByClassName("sign-up__form__block__register").addEventListener("click", function(event) {
+document.querySelector(".sign-up__form__block__register").addEventListener('click', function(event) {
 	event.preventDefault();
 		
 	var username = document.getElementsByClassName("sign-up__form__block__username").value;
